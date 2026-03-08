@@ -1,0 +1,34 @@
+# Conda
+.conda/
+*.conda
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large or generated data (optional)
+# data/*.csv
+# data/*.log
+
+.github/
+example_seminar_excerpt/

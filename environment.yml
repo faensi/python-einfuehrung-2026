@@ -1,0 +1,13 @@
+name: python_grundlagen
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.13
+  - jupyter
+  - ipykernel
+  - ipython
+  - notebook
+  - numpy
+  - scipy
+  - matplotlib
