@@ -1,19 +1,19 @@
-# Tag 1 - Zusammenfassung: Python-Grundlagen und Datenstrukturen
+# Day 1 – Summary: Python Basics and Data Structures
 
-## Themen des Tages
+## Topics of the Day
 
-- **Python-Ueberblick**: Was ist Python, Besonderheiten und Unterschiede zu anderen Sprachen
-- **Datentypen, Variablen, Objekte**: Typen, Zuweisung, Klassen und Objekte als Grundbegriffe
-- **Strings**: Zeichenketten, Indizierung, Slicing, wichtige Methoden (`split`, `join`, `format`, etc.)
-- **Dictionaries und Sets**: Key-Value-Paare, Mengen, Frozensets, typische Anwendungen
+- **Python overview**: What Python is, its characteristics, and differences from other languages
+- **Data types, variables, objects**: Types, assignment, classes, and objects as basic concepts
+- **Strings**: Character strings, indexing, slicing, important methods (`split`, `join`, `format`, etc.)
+- **Dictionaries and sets**: Key–value pairs, sets, frozensets, typical applications
 
-## Wichtige Konzepte
+## Important Concepts
 
-- Python ist interpretiert, dynamisch typisiert und objektorientiert.
-- Alles in Python ist ein Objekt; Variablen sind Referenzen auf Objekte.
-- Strings sind unveränderlich; Operationen erzeugen neue Strings.
-- Dictionaries fuer schnelles Nachschlagen; Sets fuer eindeutige Elemente ohne Reihenfolge.
+- Python is interpreted, dynamically typed, and object-oriented.
+- Everything in Python is an object; variables are references to objects.
+- Strings are immutable; operations create new strings.
+- Dictionaries are used for fast lookups; sets are used for unique elements without order.
 
-## Naechster Tag
+## Next Day
 
-Tag 2 behandelt Kontrollstrukturen (Bedingungen, Schleifen), Funktionen, Ein-/Ausgabe und Module.
+Day 2 covers control structures (conditions, loops), functions, input/output, and modules.
