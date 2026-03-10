@@ -1,5 +1,0 @@
-Python ist eine interpretierte Programmiersprache.
-Sie wurde von Guido van Rossum entworfen.
-Die erste Version erschien 1991.
-Python betont Lesbarkeit und klare Syntax.
-Variablen brauchen keine explizite Typdeklaration.

@@ -1,4 +1,4 @@
-name: python_grundlagen
+name: python_basics
 channels:
   - conda-forge
   - defaults

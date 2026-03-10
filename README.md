@@ -1,100 +1,100 @@
-# Python Grundlagen
+# Python Basics
 
-Kursmaterialien und Jupyter-Notebooks fuer den dreitaegigen Einstiegskurs **Python Grundlagen**. Der Kurs richtet sich an Wissenschaftlerinnen und Wissenschaftler (und andere Interessierte) ohne Vorkenntnisse in Python.
+Course materials and Jupyter notebooks for the three-day introductory course **Python Basics**. The course is aimed at scientists and researchers (and other interested parties) with no prior knowledge of Python.
 
-## Miniforge (Conda Forge) unter Windows installieren
+## Installing Miniforge (Conda Forge) on Windows
 
-Fuer den Kurs wird **Miniforge** empfohlen (Conda mit conda-forge als Standard-Channel).
+**Miniforge** is recommended for the course (Conda with conda-forge as the default channel).
 
-1. **Installer herunterladen**: [Miniforge Releases](https://github.com/conda-forge/miniforge/releases) – fuer Windows 64-Bit z.B. `Miniforge3-Windows-x86_64.exe`.
-2. **Installer ausfuehren**: Doppelklick auf die `.exe`, den Anweisungen folgen. Option "Add Miniforge3 to my PATH" aktivieren, damit `conda` im Terminal verfuegbar ist.
-3. **Terminal neu oeffnen**: Nach der Installation ein neues Terminal (PowerShell oder Eingabeaufforderung) oeffnen und pruefen:
+1. **Download installer**: [Miniforge Releases](https://github.com/conda-forge/miniforge/releases) - for Windows 64-bit use e.g. `Miniforge3-Windows-x86_64.exe`.
+2. **Run installer**: Double-click the `.exe`, follow the instructions. Enable the option "Add Miniforge3 to my PATH" so that `conda` is available in the terminal.
+3. **Restart terminal**: After installation, open a new terminal (PowerShell or Command Prompt) and verify:
    ```bash
    conda --version
    ```
 
-4. **Conda in anderen Terminals (z.B. Git Bash)**: Wenn du Git Bash oder ein anderes Bash-Terminal nutzt, ist `conda` dort zunaechst oft nicht verfuegbar. Einmalig in einem Terminal ausfuehren, in dem `conda` schon funktioniert (z.B. Miniforge Prompt oder PowerShell):
+4. **Conda in other terminals (e.g. Git Bash)**: If you use Git Bash or another Bash terminal, `conda` may not be available there initially. Run once in a terminal where `conda` already works (e.g. Miniforge Prompt or PowerShell):
    ```bash
    conda init bash
    ```
-   Anschliessend Git Bash (oder das andere Bash-Terminal) neu starten – danach funktioniert `conda` auch dort.
+   Then restart Git Bash (or the other Bash terminal) - after that, `conda` will work there too.
 
 ## Setup
 
-Kursumgebung mit Miniforge/Conda einrichten:
+Set up the course environment with Miniforge/Conda:
 
 ```bash
 conda env create -f environment.yml
-conda activate python_grundlagen
+conda activate python_basics
 ```
 
-Bestehende Umgebung aktualisieren:
+Update an existing environment:
 
 ```bash
-conda env update -n python_grundlagen -f environment.yml --prune
+conda env update -n python_basics -f environment.yml --prune
 ```
 
-## Verzeichnisstruktur
+## Directory Structure
 
 ```
-python_grundlagen/
-├── day1/                          # Tag 1: Python-Grundlagen und Datenstrukturen
-│   ├── 00_python_ueberblick.ipynb
-│   ├── 01_datentypen_variablen_objekte.ipynb
-│   ├── 02_strings_zeichenketten.ipynb
+python_basics/
+├── day1/                          # Day 1: Python basics and data structures
+│   ├── 00_python_overview.ipynb
+│   ├── 01_data_types_variables_objects.ipynb
+│   ├── 02_strings.ipynb
 │   ├── 03_dictionaries_sets.ipynb
-│   └── Tag1_Zusammenfassung.md
-├── day2/                          # Tag 2: Kontrollstrukturen, E/A, Module
-│   ├── 04_bedingungen_verzweigungen.ipynb
-│   ├── 05_schleifen.ipynb
-│   ├── 06_funktionen.ipynb
-│   ├── 07_ein_ausgabe_dateien.ipynb
-│   ├── 08_module_bibliotheken.ipynb
-│   └── Tag2_Zusammenfassung.md
-├── day3/                          # Tag 3: Fehlerbehandlung, OOP, Ausblick
-│   ├── 09_fehler_ausnahmen.ipynb
-│   ├── 10_oop_klassen_grundlagen.ipynb
-│   ├── 11_oop_vererbung.ipynb
-│   ├── 12_ausblick_bibliotheken.ipynb
-│   └── Tag3_Zusammenfassung.md
-├── data/                          # Datensatze (CSV, Logs, Text) fuer Ubungen
+│   └── Day1_Summary.md
+├── day2/                          # Day 2: Control structures, I/O, modules
+│   ├── 04_conditions_branches.ipynb
+│   ├── 05_loops.ipynb
+│   ├── 06_functions.ipynb
+│   ├── 07_input_output_files.ipynb
+│   ├── 08_modules_libraries.ipynb
+│   └── Day2_Summary.md
+├── day3/                          # Day 3: Error handling, OOP, outlook
+│   ├── 09_errors_exceptions.ipynb
+│   ├── 10_oop_classes_basics.ipynb
+│   ├── 11_oop_inheritance.ipynb
+│   ├── 12_outlook_libraries.ipynb
+│   └── Day3_Summary.md
+├── data/                          # Datasets (CSV, logs, text) for exercises
 ├── environment.yml
 └── README.md
 ```
 
-### Nummerierung der Notebooks
+### Notebook Numbering
 
-Die Notebooks sind fortlaufend uber alle Tage nummeriert:
+Notebooks are numbered continuously across all days:
 
-- Tag 1: 00-03
-- Tag 2: 04-08
-- Tag 3: 09-12
+- Day 1: 00-03
+- Day 2: 04-08
+- Day 3: 09-12
 
-## Wichtige Dateien
+## Important Files
 
-- **environment.yml**: Conda-Umgebung (Python 3.13, Jupyter, ggf. NumPy/Matplotlib fuer Tag 3)
-- **00_uebersicht.md**: Kursuberblick, Lernziele, Ablauf pro Tag
-- **TagN_Zusammenfassung.md**: Pro Tag eine Zusammenfassung der Themen und Konzepte
+- **environment.yml**: Conda environment (Python 3.13, Jupyter, NumPy/Matplotlib for Day 3)
+- **00_overview.md**: Course overview, learning objectives, schedule per day
+- **DayN_Summary.md**: Per-day summary of topics and concepts
 
-## Nutzung
+## Usage
 
-### Reihenfolge
+### Order
 
-1. Notebooks in numerischer Reihenfolge durcharbeiten (00, 01, 02, ...).
-2. Jeder Tag baut auf dem vorherigen auf.
+1. Work through notebooks in numerical order (00, 01, 02, ...).
+2. Each day builds on the previous one.
 
-### Aufgaben und Losungen
+### Tasks and Solutions
 
-Jedes Notebook enthalt Theorie, Beispiele und ggf. Aufgaben. Die Musterlosungen stehen unter der Uberschrift **#### Losung:** und sind standardmaessig eingeklappt. Auf die Uberschrift klicken, um die Losung anzuzeigen.
+Each notebook contains theory, examples, and optionally tasks. Model solutions are under the heading **#### Solution:** and are collapsed by default. Click the heading to expand the solution.
 
-### Technische Details
+### Technical Details
 
 - Python 3.13
 - Jupyter Notebook (.ipynb)
-- Conda-Umgebung: `python_grundlagen`
+- Conda environment: `python_basics`
 
 ## Support
 
-- Tag-Zusammenfassungen (`dayN/TagN_Zusammenfassung.md`) zur Wiederholung
-- Musterlosungen in den Notebooks
-- Offizielle Python-Dokumentation: https://docs.python.org/3/
+- Day summaries (`dayN/DayN_Summary.md`) for review
+- Model solutions in the notebooks
+- Official Python documentation: https://docs.python.org/3/
