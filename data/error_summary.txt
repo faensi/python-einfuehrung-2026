@@ -1,0 +1,2 @@
+WARNING: 3
+ERROR: 3

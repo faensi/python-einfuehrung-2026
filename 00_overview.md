@@ -2,7 +2,7 @@
 
 ## Welcome
 
-This course is for **scientists and researchers with no prior Python experience**. In three days you will learn the fundamentals of programming with Python: data types, control structures, input/output, modules, error handling, object-oriented concepts, and an outlook on important libraries.
+This course is for **scientists and researchers with no prior Python experience**. In three days you will learn the fundamentals of programming with Python: data types, control structures, input/output, modules, error handling, object-oriented concepts, and an outlook on important libraries and tools.
 
 ---
 
@@ -38,6 +38,19 @@ This course is for **scientists and researchers with no prior Python experience*
 - **Outlook**: Brief introduction to NumPy, SciPy, and Matplotlib
 
 **What you will learn**: You will handle errors effectively and understand the fundamentals of object-oriented programming in Python, as well as applications of important libraries.
+
+---
+
+### Day 4: Logging, Lambdas, NumPy, Pandas, APIs, Tools, and TIFF
+**7 Notebooks (13-19)**
+
+- **Logging**: Basic logging setup and levels
+- **Lambda Functions**: Anonymous functions, sorted/filter/map
+- **NumPy**: Why arrays are better than lists for calculations
+- **Pandas and Matplotlib**: Tabular data (CSV/JSON), visualization
+- **Using APIs**: HTTP requests, JSONPlaceholder example
+- **Python Tools Overview**: Conda, Mamba, Anaconda/Miniconda, conda-forge, PyCharm, Jupyter, common terms (theory only)
+- **TIFF**: Working with TIFF images (tifffile, at3_1m4_01.tif)
 
 ---
 

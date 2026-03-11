@@ -28,11 +28,19 @@ conda env create -f environment.yml
 conda activate python_basics
 ```
 
-Update an existing environment:
+Update an existing environment when `environment.yml` has changed (e.g. new packages added):
 
 ```bash
 conda env update -n python_basics -f environment.yml --prune
 ```
+
+Use your actual environment name instead of `python_basics` if you created it differently (e.g. `python_grundlagen`):
+
+```bash
+conda env update -n python_grundlagen -f environment.yml --prune
+```
+
+`--prune` removes packages that are no longer listed in the yml file.
 
 ## Directory Structure
 
@@ -57,6 +65,14 @@ python_basics/
 │   ├── 11_oop_inheritance.ipynb
 │   ├── 12_outlook_libraries.ipynb
 │   └── Day3_Summary.md
+├── day4/                          # Day 4: Logging, lambdas, NumPy, Pandas, APIs, tools, TIFF
+│   ├── 13_logging.ipynb
+│   ├── 14_lambda_functions.ipynb
+│   ├── 15_numpy.ipynb
+│   ├── 16_pandas_matplotlib.ipynb
+│   ├── 17_using_apis.ipynb
+│   ├── 18_python_tools_overview.ipynb
+│   └── 19_tiff.ipynb
 ├── data/                          # Datasets (CSV, logs, text) for exercises
 ├── environment.yml
 └── README.md
@@ -69,10 +85,11 @@ Notebooks are numbered continuously across all days:
 - Day 1: 00-03
 - Day 2: 04-08
 - Day 3: 09-12
+- Day 4: 13-19
 
 ## Important Files
 
-- **environment.yml**: Conda environment (Python 3.13, Jupyter, NumPy/Matplotlib for Day 3)
+- **environment.yml**: Conda environment (Python 3.13, Jupyter, NumPy, Pandas, Matplotlib, requests, tifffile)
 - **00_overview.md**: Course overview, learning objectives, schedule per day
 - **DayN_Summary.md**: Per-day summary of topics and concepts
 

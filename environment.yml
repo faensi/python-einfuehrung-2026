@@ -1,7 +1,6 @@
 name: python_basics
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python=3.13
   - jupyter
@@ -11,3 +10,6 @@ dependencies:
   - numpy
   - scipy
   - matplotlib
+  - pandas
+  - requests
+  - tifffile
