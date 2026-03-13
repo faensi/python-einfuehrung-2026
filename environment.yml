@@ -1,4 +1,4 @@
-name: python_basics
+name: python_grundlagen
 channels:
   - conda-forge
 dependencies:
@@ -10,6 +10,6 @@ dependencies:
   - numpy
   - scipy
   - matplotlib
-  - pandas
+  - pandas=3.0
   - requests
   - tifffile

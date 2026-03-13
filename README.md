@@ -2,26 +2,43 @@
 
 Course materials and Jupyter notebooks for the three-day introductory course **Python Basics**. The course is aimed at scientists and researchers (and other interested parties) with no prior knowledge of Python.
 
-## Installing Miniforge (Conda Forge) on Windows
+## Setup: Miniforge and IDE
 
-**Miniforge** is recommended for the course (Conda with conda-forge as the default channel).
+### 1. Installing Miniforge (Python + Conda)
 
-1. **Download installer**: [Miniforge Releases](https://github.com/conda-forge/miniforge/releases) - for Windows 64-bit use e.g. `Miniforge3-Windows-x86_64.exe`.
-2. **Run installer**: Double-click the `.exe`, follow the instructions. Enable the option "Add Miniforge3 to my PATH" so that `conda` is available in the terminal.
-3. **Restart terminal**: After installation, open a new terminal (PowerShell or Command Prompt) and verify:
+**Miniforge** is a minimal installer that provides **Conda** (package and environment manager) with **conda-forge** as the default package channel. It is the preferred way to get Python for this course.
+
+1. **Download**: Go to [conda-forge.org/download](https://conda-forge.org/download/) and download the installer for your system:
+   - **Windows**: `Miniforge3-Windows-x86_64.exe` (64-bit)
+   - **macOS**: Choose ARM64 (Apple Silicon) or x86_64 (Intel)
+   - **Linux**: Choose the appropriate architecture
+
+2. **Install**: Run the installer. On Windows, enable **"Add Miniforge3 to my PATH"** so that `conda` is available in any terminal.
+
+3. **Verify**: Open a new terminal (PowerShell, Command Prompt, or Miniforge Prompt) and run:
    ```bash
    conda --version
    ```
 
-4. **Conda in other terminals (e.g. Git Bash)**: If you use Git Bash or another Bash terminal, `conda` may not be available there initially. Run once in a terminal where `conda` already works (e.g. Miniforge Prompt or PowerShell):
+4. **Conda in Git Bash** (optional): If you use Git Bash, run once in a terminal where `conda` works:
    ```bash
    conda init bash
    ```
-   Then restart Git Bash (or the other Bash terminal) - after that, `conda` will work there too.
+   Then restart Git Bash.
 
-## Setup
+### 2. Installing VS Code (IDE)
 
-Set up the course environment with Miniforge/Conda:
+**VS Code** (Visual Studio Code) is a free **text and code editor** with many useful extensions. It supports Python, Jupyter notebooks, debugging, and integrated terminals.
+
+1. **Download**: [code.visualstudio.com](https://code.visualstudio.com/)
+2. **Install**: Run the installer and follow the steps.
+3. **Extensions** (recommended for this course):
+   - **Python** (by Microsoft) – Python support, IntelliSense, debugging
+   - **Jupyter** (by Microsoft) – run and edit Jupyter notebooks inside VS Code
+
+### 3. Course environment
+
+Set up the course environment with Conda (run in a terminal from the course folder):
 
 ```bash
 conda env create -f environment.yml
@@ -41,6 +58,13 @@ conda env update -n python_grundlagen -f environment.yml --prune
 ```
 
 `--prune` removes packages that are no longer listed in the yml file.
+
+### 4. Using VS Code with a notebook (.ipynb)
+
+1. **Open the course folder**: In VS Code, go to **File → Open Folder** and select the folder containing this README.
+2. **Open a notebook**: In the file explorer (left sidebar), open a `.ipynb` file (e.g. `day1/00_python_overview.ipynb`).
+3. **Select the kernel**: At the top right of the notebook, click **Select Kernel** (or the kernel name). Choose **Python Environments** → `python_basics` (or your environment name).
+4. **Run a cell**: Click the play button next to a cell, or press **Shift+Enter** to run the cell and move to the next one.
 
 ## Directory Structure
 
